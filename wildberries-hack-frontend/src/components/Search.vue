@@ -43,7 +43,7 @@
     <div class="text-left text-gray-400 italic flex flex-row space-x-2">
       <div>Например:</div>
       <div
-        v-for="sample in samples.slice(0, 4)"
+        v-for="sample in samples.slice(0, 3)"
         :key="sample"
         class="border px-1 rounded cursor-pointer"
         @click="fromSuggest(sample)"

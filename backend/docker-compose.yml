@@ -1,0 +1,13 @@
+version: '3'
+services:
+    prediction:
+        container_name: prediction
+        build:
+            context: ./prediction
+            dockerfile: Dockerfile
+        volumes:
+            - ./prediction/app:/app
+        ports:
+            - 8087:80
+        restart: always
+
